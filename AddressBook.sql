@@ -26,3 +26,7 @@ INSERT INTO Addressbook VALUES('Sunil','Kadam','Udgir','Latur','Maharashtra',413
 
 SELECT * FROM Addressbook
 
+-----UC4 Edit Contact-----
+
+UPDATE Addressbook SET Address = 'Cuffe parade' WHERE FirstName = 'Kundan'
+
