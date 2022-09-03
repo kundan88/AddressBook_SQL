@@ -4,7 +4,7 @@ CREATE DATABASE AddressBook
 
 USE AddressBook
 
-----UC2 Create AddressBook Table---
+----UC2 Create Addressbook Table---
 
 CREATE TABLE Addressbook
 (
@@ -29,4 +29,8 @@ SELECT * FROM Addressbook
 -----UC4 Edit Contact-----
 
 UPDATE Addressbook SET Address = 'Cuffe parade' WHERE FirstName = 'Kundan'
+
+----UC5 Delete Contact---
+
+DELETE FROM Addressbook WHERE FirstName = 'Sunil'
 
