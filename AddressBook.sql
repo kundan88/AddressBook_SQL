@@ -18,3 +18,11 @@ CREATE TABLE Addressbook
 	PhoneNumber BIGINT NOT NULL,
 	Email VARCHAR(50) NOT NULL
 );
+
+-----UC3 Insert Values----
+
+INSERT INTO Addressbook VALUES('Kundan','Kamble','Colaba','Mumbai','Maharashtra',400005,7410741141,'kundan358@gmail.com')
+INSERT INTO Addressbook VALUES('Sunil','Kadam','Udgir','Latur','Maharashtra',413517,7410786644,'sunil@gmail.com')
+
+SELECT * FROM Addressbook
+
