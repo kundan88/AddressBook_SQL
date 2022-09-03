@@ -1,3 +1,4 @@
+
 ---UC1 Create AddressBook Database----
 CREATE DATABASE AddressBook
 
@@ -48,5 +49,19 @@ SELECT COUNT(City) FROM Addressbook WHERE City = 'Mumbai' and State = 'Maharasht
 -----UC8 Sort By Alphabeticaly--------------
 
 SELECT * FROM Addressbook WHERE City = 'Mumbai' ORDER BY FirstName
+
+
+------UC9  Identify Each AddressBook-----
+
+ALTER TABLE Addressbook
+ADD NAME VARCHAR(100), TYPE VARCHAR(100)
+
+UPDATE AddressBook SET TYPE = 'FriendsBook', NAME = 'Friend' WHERE FirstName in ('Tushar','Mahesh');
+
+
+------UC10------
+Select COUNT(*),TYPE from Addressbook Group by Type
+
+
 
 
