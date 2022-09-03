@@ -4,7 +4,7 @@ CREATE DATABASE AddressBook
 
 USE AddressBook
 
-----UC2 Create Addressbook Table---
+----UC2 Create AddressBook Table---
 
 CREATE TABLE Addressbook
 (
@@ -36,6 +36,10 @@ DELETE FROM Addressbook WHERE FirstName = 'Sunil'
 ------UC6 Retrieve Person From City or State-----------
 
 SELECT * FROM Addressbook WHERE City = 'Mumbai' or State = 'Maharashtra'
+
+-----UC7 Count --------
+
+SELECT COUNT(City) FROM Addressbook WHERE City = 'Mumbai' and State = 'Maharashtra'
 
 
 
